@@ -78,18 +78,82 @@ pids
 *.seed
 *.pid.lock
 
-# Environment variables
+# Environment variables and sensitive configuration
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.env.*.local
+application-local.properties
+application-dev.properties
+application-prod.properties
+application-staging.properties
+application-secret.properties
+application-credentials.properties
+config/application-*.properties
+!config/application.properties
+!config/application.yml
 
 # Database
 *.db
 *.sqlite
 *.sqlite3
 *.h2.db
+*.mv.db
+*.trace.db
+database/
+data/
+db/
+h2/
+mysql/
+postgresql/
+mongodb/
+
+# Docker
+docker-compose.override.yml
+docker-compose.local.yml
+docker-compose.dev.yml
+docker-compose.prod.yml
+.docker/
+docker-data/
+volumes/
+
+# Kubernetes
+k8s-secrets/
+*.kubeconfig
+kubeconfig
+secrets/
+configmaps/
+
+# SSL/TLS Certificates
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+*.keystore
+*.truststore
+ssl/
+certs/
+certificates/
+
+# API Keys and Secrets
+secrets.json
+credentials.json
+api-keys.json
+firebase-adminsdk-*.json
+google-services.json
+GoogleService-Info.plist
+*.p8
+*.mobileprovision
+*.cer
+
+# JWT and Authentication
+jwt-secret.key
+auth-secret.key
+*.jwt
+tokens/
 
 # Temporary files
 *.tmp
@@ -101,6 +165,23 @@ temp/
 *.bak
 *.backup
 *.old
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Test coverage
+coverage/
+*.lcov
+jacoco.exec
+jacoco.xml
+
+# Node.js (if using any frontend tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Swift / Xcode
 # Xcode
@@ -228,8 +309,55 @@ Thumbs.db
 coverage/
 *.lcov
 
-# Node.js (if using any frontend tools)
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Blockchain/Web3 specific
+wallet.json
+wallet.dat
+*.wallet
+private-keys/
+mnemonic.txt
+seed-phrase.txt
+keystore/
+*.keystore
+
+# NFT specific
+metadata/
+images/
+assets/
+uploads/
+media/
+
+# AWS
+.aws/
+aws-credentials.json
+*.pem
+
+# Azure
+.azure/
+azure-credentials.json
+
+# Google Cloud
+.gcloud/
+gcp-credentials.json
+service-account.json
+
+# Monitoring and Analytics
+monitoring/
+analytics/
+metrics/
+*.metrics
+
+# Cache directories
+.cache/
+cache/
+.temp/
+.tmp/
+
+# IDE specific
+*.swp
+*.swo
+*~
+
+# Local development
+local/
+dev/
+development/
