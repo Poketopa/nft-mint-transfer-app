@@ -111,7 +111,6 @@ postgresql/
 mongodb/
 
 # Docker
-.dockerignore
 docker-compose.override.yml
 docker-compose.local.yml
 docker-compose.dev.yml
