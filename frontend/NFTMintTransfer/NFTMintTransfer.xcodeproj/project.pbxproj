@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EE58A31D2E6C80AF00523237 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EE58A31C2E6C80AF00523237 /* Debug.xcconfig */; };
+		EE58A31F2E6C80C200523237 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EE58A31E2E6C80C200523237 /* Release.xcconfig */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		EE58A2EA2E6C715200523237 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		EE58A2D42E6C715100523237 /* NFTMintTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFTMintTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE58A2E92E6C715200523237 /* NFTMintTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NFTMintTransferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE58A2F32E6C715200523237 /* NFTMintTransferUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NFTMintTransferUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE58A31C2E6C80AF00523237 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		EE58A31E2E6C80C200523237 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -79,6 +86,9 @@
 				EE58A2EC2E6C715200523237 /* NFTMintTransferTests */,
 				EE58A2F62E6C715200523237 /* NFTMintTransferUITests */,
 				EE58A2D52E6C715100523237 /* Products */,
+				EE58A3072E6C772900523237 /* Configs */,
+				EE58A31C2E6C80AF00523237 /* Debug.xcconfig */,
+				EE58A31E2E6C80C200523237 /* Release.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +100,13 @@
 				EE58A2F32E6C715200523237 /* NFTMintTransferUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EE58A3072E6C772900523237 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +229,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE58A31F2E6C80C200523237 /* Release.xcconfig in Resources */,
+				EE58A31D2E6C80AF00523237 /* Debug.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +290,7 @@
 /* Begin XCBuildConfiguration section */
 		EE58A2FB2E6C715200523237 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE58A31C2E6C80AF00523237 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -334,6 +354,7 @@
 		};
 		EE58A2FC2E6C715200523237 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE58A31E2E6C80C200523237 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -446,6 +467,7 @@
 		};
 		EE58A3012E6C715200523237 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE58A31C2E6C80AF00523237 /* Debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +486,7 @@
 		};
 		EE58A3022E6C715200523237 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE58A31E2E6C80C200523237 /* Release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -482,6 +505,7 @@
 		};
 		EE58A3042E6C715200523237 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE58A31C2E6C80AF00523237 /* Debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -498,6 +522,7 @@
 		};
 		EE58A3052E6C715200523237 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE58A31E2E6C80C200523237 /* Release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
