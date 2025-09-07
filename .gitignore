@@ -78,82 +78,18 @@ pids
 *.seed
 *.pid.lock
 
-# Environment variables and sensitive configuration
+# Environment variables
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-.env.*.local
-application-local.properties
-application-dev.properties
-application-prod.properties
-application-staging.properties
-application-secret.properties
-application-credentials.properties
-config/application-*.properties
-!config/application.properties
-!config/application.yml
 
 # Database
 *.db
 *.sqlite
 *.sqlite3
 *.h2.db
-*.mv.db
-*.trace.db
-database/
-data/
-db/
-h2/
-mysql/
-postgresql/
-mongodb/
-
-# Docker
-docker-compose.override.yml
-docker-compose.local.yml
-docker-compose.dev.yml
-docker-compose.prod.yml
-.docker/
-docker-data/
-volumes/
-
-# Kubernetes
-k8s-secrets/
-*.kubeconfig
-kubeconfig
-secrets/
-configmaps/
-
-# SSL/TLS Certificates
-*.pem
-*.key
-*.crt
-*.p12
-*.jks
-*.keystore
-*.truststore
-ssl/
-certs/
-certificates/
-
-# API Keys and Secrets
-secrets.json
-credentials.json
-api-keys.json
-firebase-adminsdk-*.json
-google-services.json
-GoogleService-Info.plist
-*.p8
-*.mobileprovision
-*.cer
-
-# JWT and Authentication
-jwt-secret.key
-auth-secret.key
-*.jwt
-tokens/
 
 # Temporary files
 *.tmp
@@ -165,23 +101,6 @@ temp/
 *.bak
 *.backup
 *.old
-
-# Archive files
-*.zip
-*.tar.gz
-*.rar
-
-# Test coverage
-coverage/
-*.lcov
-jacoco.exec
-jacoco.xml
-
-# Node.js (if using any frontend tools)
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # Swift / Xcode
 # Xcode
@@ -309,7 +228,60 @@ Thumbs.db
 coverage/
 *.lcov
 
-# Blockchain/Web3 specific
+# Node.js (if using any frontend tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+docker-compose.local.yml
+docker-compose.dev.yml
+docker-compose.prod.yml
+.docker/
+docker-data/
+volumes/
+
+# AWS S3 & Cloud Services
+.aws/
+aws-credentials.json
+*.pem
+.azure/
+azure-credentials.json
+.gcloud/
+gcp-credentials.json
+service-account.json
+
+# JWT & Security
+jwt-secret.key
+auth-secret.key
+*.jwt
+tokens/
+secrets.json
+credentials.json
+api-keys.json
+firebase-adminsdk-*.json
+google-services.json
+GoogleService-Info.plist
+*.p8
+*.mobileprovision
+*.cer
+
+# SSL/TLS Certificates
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+*.keystore
+*.truststore
+ssl/
+certs/
+certificates/
+
+# Blockchain/Web3/NFT specific
 wallet.json
 wallet.dat
 *.wallet
@@ -318,6 +290,14 @@ mnemonic.txt
 seed-phrase.txt
 keystore/
 *.keystore
+contract-addresses.json
+abi/
+contracts/
+hardhat.config.js
+truffle-config.js
+.env.local
+.env.development
+.env.production
 
 # NFT specific
 metadata/
@@ -325,26 +305,33 @@ images/
 assets/
 uploads/
 media/
+nft-images/
+token-metadata/
 
-# AWS
-.aws/
-aws-credentials.json
-*.pem
+# Database dumps & backups
+*.sql
+*.dump
+database-backup/
+db-backup/
 
-# Azure
-.azure/
-azure-credentials.json
-
-# Google Cloud
-.gcloud/
-gcp-credentials.json
-service-account.json
+# Application specific
+application-local.properties
+application-dev.properties
+application-prod.properties
+application-staging.properties
+application-secret.properties
+application-credentials.properties
+config/application-*.properties
+!config/application.properties
+!config/application.yml
 
 # Monitoring and Analytics
 monitoring/
 analytics/
 metrics/
 *.metrics
+logs/
+*.log
 
 # Cache directories
 .cache/
@@ -361,3 +348,18 @@ cache/
 local/
 dev/
 development/
+
+# Test files
+test-results/
+test-reports/
+*.test.log
+
+# Build artifacts
+dist/
+build/
+out/
+target/
+
+# Temporary uploads
+uploads/
+temp-uploads/
