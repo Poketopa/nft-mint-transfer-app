@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EEDBA6C92E6F1E09002B2CB1 /* NetworkContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDBA6C82E6F1E09002B2CB1 /* NetworkContainer.swift */; };
+		EEDBA6CE2E6F238F002B2CB1 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDBA6CD2E6F238F002B2CB1 /* AuthViewModel.swift */; };
+		EEDBA6D02E6F23A9002B2CB1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDBA6CF2E6F23A9002B2CB1 /* LoginView.swift */; };
+		EEDBA6DD2E70092B002B2CB1 /* NetworkingKitJWT in Frameworks */ = {isa = PBXBuildFile; productRef = EEDBA6DC2E70092B002B2CB1 /* NetworkingKitJWT */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE58A2EA2E6C715200523237 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE58A2CC2E6C715100523237 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE58A2D32E6C715100523237;
+			remoteInfo = NFTMintTransfer;
+		};
+		EE58A2F42E6C715200523237 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE58A2CC2E6C715100523237 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE58A2D32E6C715100523237;
+			remoteInfo = NFTMintTransfer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE58A2D42E6C715100523237 /* NFTMintTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFTMintTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE58A2E92E6C715200523237 /* NFTMintTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NFTMintTransferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE58A2F32E6C715200523237 /* NFTMintTransferUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NFTMintTransferUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE58A3382E6C84F300523237 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		EE58A3392E6C84F300523237 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		EE58A33A2E6C84F300523237 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		EEDBA6C82E6F1E09002B2CB1 /* NetworkContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkContainer.swift; sourceTree = "<group>"; };
+		EEDBA6CD2E6F238F002B2CB1 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		EEDBA6CF2E6F23A9002B2CB1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EE58A2D62E6C715100523237 /* NFTMintTransfer */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NFTMintTransfer;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE58A2D12E6C715100523237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEDBA6DD2E70092B002B2CB1 /* NetworkingKitJWT in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE58A2E62E6C715200523237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE58A2F02E6C715200523237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE58A2CB2E6C715100523237 = {
+			isa = PBXGroup;
+			children = (
+				EEDBA6CF2E6F23A9002B2CB1 /* LoginView.swift */,
+				EEDBA6CD2E6F238F002B2CB1 /* AuthViewModel.swift */,
+				EEDBA6C82E6F1E09002B2CB1 /* NetworkContainer.swift */,
+				EE58A33B2E6C84F300523237 /* Configs */,
+				EE58A2D62E6C715100523237 /* NFTMintTransfer */,
+				EEDBA6CA2E6F21E5002B2CB1 /* Frameworks */,
+				EE58A2D52E6C715100523237 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE58A2D52E6C715100523237 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE58A2D42E6C715100523237 /* NFTMintTransfer.app */,
+				EE58A2E92E6C715200523237 /* NFTMintTransferTests.xctest */,
+				EE58A2F32E6C715200523237 /* NFTMintTransferUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE58A33B2E6C84F300523237 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				EE58A3382E6C84F300523237 /* Debug.xcconfig */,
+				EE58A3392E6C84F300523237 /* Release.xcconfig */,
+				EE58A33A2E6C84F300523237 /* Shared.xcconfig */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		EEDBA6CA2E6F21E5002B2CB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE58A2D32E6C715100523237 /* NFTMintTransfer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE58A2FD2E6C715200523237 /* Build configuration list for PBXNativeTarget "NFTMintTransfer" */;
+			buildPhases = (
+				EE58A2D02E6C715100523237 /* Sources */,
+				EE58A2D12E6C715100523237 /* Frameworks */,
+				EE58A2D22E6C715100523237 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EE58A2D62E6C715100523237 /* NFTMintTransfer */,
+			);
+			name = NFTMintTransfer;
+			packageProductDependencies = (
+				EEDBA6DC2E70092B002B2CB1 /* NetworkingKitJWT */,
+			);
+			productName = NFTMintTransfer;
+			productReference = EE58A2D42E6C715100523237 /* NFTMintTransfer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE58A2E82E6C715200523237 /* NFTMintTransferTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE58A3002E6C715200523237 /* Build configuration list for PBXNativeTarget "NFTMintTransferTests" */;
+			buildPhases = (
+				EE58A2E52E6C715200523237 /* Sources */,
+				EE58A2E62E6C715200523237 /* Frameworks */,
+				EE58A2E72E6C715200523237 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE58A2EB2E6C715200523237 /* PBXTargetDependency */,
+			);
+			name = NFTMintTransferTests;
+			packageProductDependencies = (
+			);
+			productName = NFTMintTransferTests;
+			productReference = EE58A2E92E6C715200523237 /* NFTMintTransferTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE58A2F22E6C715200523237 /* NFTMintTransferUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE58A3032E6C715200523237 /* Build configuration list for PBXNativeTarget "NFTMintTransferUITests" */;
+			buildPhases = (
+				EE58A2EF2E6C715200523237 /* Sources */,
+				EE58A2F02E6C715200523237 /* Frameworks */,
+				EE58A2F12E6C715200523237 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE58A2F52E6C715200523237 /* PBXTargetDependency */,
+			);
+			name = NFTMintTransferUITests;
+			packageProductDependencies = (
+			);
+			productName = NFTMintTransferUITests;
+			productReference = EE58A2F32E6C715200523237 /* NFTMintTransferUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE58A2CC2E6C715100523237 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					EE58A2D32E6C715100523237 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					EE58A2E82E6C715200523237 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = EE58A2D32E6C715100523237;
+					};
+					EE58A2F22E6C715200523237 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = EE58A2D32E6C715100523237;
+					};
+				};
+			};
+			buildConfigurationList = EE58A2CF2E6C715100523237 /* Build configuration list for PBXProject "NFTMintTransfer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE58A2CB2E6C715100523237;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EEDBA6DB2E700888002B2CB1 /* XCLocalSwiftPackageReference "NetworkingKit-JWT" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EE58A2D52E6C715100523237 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE58A2D32E6C715100523237 /* NFTMintTransfer */,
+				EE58A2E82E6C715200523237 /* NFTMintTransferTests */,
+				EE58A2F22E6C715200523237 /* NFTMintTransferUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE58A2D22E6C715100523237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE58A2E72E6C715200523237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE58A2F12E6C715200523237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE58A2D02E6C715100523237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEDBA6CE2E6F238F002B2CB1 /* AuthViewModel.swift in Sources */,
+				EEDBA6C92E6F1E09002B2CB1 /* NetworkContainer.swift in Sources */,
+				EEDBA6D02E6F23A9002B2CB1 /* LoginView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE58A2E52E6C715200523237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE58A2EF2E6C715200523237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE58A2EB2E6C715200523237 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE58A2D32E6C715100523237 /* NFTMintTransfer */;
+			targetProxy = EE58A2EA2E6C715200523237 /* PBXContainerItemProxy */;
+		};
+		EE58A2F52E6C715200523237 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE58A2D32E6C715100523237 /* NFTMintTransfer */;
+			targetProxy = EE58A2F42E6C715200523237 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EE58A2FB2E6C715200523237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE58A3382E6C84F300523237 /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE58A2FC2E6C715200523237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE58A3392E6C84F300523237 /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE58A2FE2E6C715200523237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NFTMintTransfer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.NFTMintTransfer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE58A2FF2E6C715200523237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NFTMintTransfer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.NFTMintTransfer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE58A3012E6C715200523237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE58A3382E6C84F300523237 /* Debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.NFTMintTransferTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NFTMintTransfer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NFTMintTransfer";
+			};
+			name = Debug;
+		};
+		EE58A3022E6C715200523237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE58A3392E6C84F300523237 /* Release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.NFTMintTransferTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NFTMintTransfer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NFTMintTransfer";
+			};
+			name = Release;
+		};
+		EE58A3042E6C715200523237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE58A3382E6C84F300523237 /* Debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.NFTMintTransferUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NFTMintTransfer;
+			};
+			name = Debug;
+		};
+		EE58A3052E6C715200523237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE58A3392E6C84F300523237 /* Release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.NFTMintTransferUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NFTMintTransfer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE58A2CF2E6C715100523237 /* Build configuration list for PBXProject "NFTMintTransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE58A2FB2E6C715200523237 /* Debug */,
+				EE58A2FC2E6C715200523237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE58A2FD2E6C715200523237 /* Build configuration list for PBXNativeTarget "NFTMintTransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE58A2FE2E6C715200523237 /* Debug */,
+				EE58A2FF2E6C715200523237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE58A3002E6C715200523237 /* Build configuration list for PBXNativeTarget "NFTMintTransferTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE58A3012E6C715200523237 /* Debug */,
+				EE58A3022E6C715200523237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE58A3032E6C715200523237 /* Build configuration list for PBXNativeTarget "NFTMintTransferUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE58A3042E6C715200523237 /* Debug */,
+				EE58A3052E6C715200523237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		EEDBA6DB2E700888002B2CB1 /* XCLocalSwiftPackageReference "NetworkingKit-JWT" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "NetworkingKit-JWT";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EEDBA6DC2E70092B002B2CB1 /* NetworkingKitJWT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEDBA6DB2E700888002B2CB1 /* XCLocalSwiftPackageReference "NetworkingKit-JWT" */;
+			productName = NetworkingKitJWT;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EE58A2CC2E6C715100523237 /* Project object */;
+}

@@ -1,0 +1,2 @@
+#include "Configs/Shared.xcconfig"
+SWIFT_ACTIVE_COMPILATION_CONDITIONS =
