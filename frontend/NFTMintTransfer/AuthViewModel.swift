@@ -15,7 +15,7 @@ final class AuthViewModel: ObservableObject {
     @Published var password = ""          // 입력한 비밀번호
     @Published var isLoading = false      // 로그인 진행 중 여부
     @Published var error: String?         // 에러 메시지
-    @Published var loggedInEmail: String? // 로그인 성공 시 이메일 저장
+    @Published var loggedInUser: UserDTO? // 로그인 성공 시 사용자 정보 저장
 
     /// 이메일/비밀번호 간단 유효성 검사
     var isFormValid: Bool {
@@ -33,7 +33,7 @@ final class AuthViewModel: ObservableObject {
         do {
             // 서버에 로그인 요청
             let user = try await NetworkContainer.auth.login(email: email, password: password)
-            loggedInEmail = user.email
+            loggedInUser = user
 
             // (선택) JWT 만료 여부 확인
             if let jwt = NetworkContainer.auth.currentJWT() {
