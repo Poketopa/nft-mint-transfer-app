@@ -38,9 +38,15 @@ public final class APIClient: APIClientProtocol {
         req.allHTTPHeaderFields = allHeaders
 
         if let enc = endpoint.body {
-            req.httpBody = try JSONEncoder().encode(AnyEncodable(enc))
-            if req.value(forHTTPHeaderField: "Content-Type") == nil {
-                req.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            if let multipartData = enc as? MultipartFormData {
+                let (body, boundary) = try createMultipartBody(multipartData)
+                req.httpBody = body
+                req.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+            } else {
+                req.httpBody = try JSONEncoder().encode(AnyEncodable(enc))
+                if req.value(forHTTPHeaderField: "Content-Type") == nil {
+                    req.setValue("application/json", forHTTPHeaderField: "Content-Type")
+                }
             }
         }
 
@@ -65,5 +71,34 @@ public final class APIClient: APIClientProtocol {
         } catch let e as URLError {
             throw NetworkError.transport(e)
         } catch { throw error }
+    }
+    
+    private func createMultipartBody(_ multipartData: MultipartFormData) throws -> (Data, String) {
+        let boundary = "Boundary-\(UUID().uuidString)"
+        var body = Data()
+        
+        // JSON 필드 추가
+        for (key, value) in multipartData.fields {
+            body.append("--\(boundary)\r\n".data(using: .utf8)!)
+            body.append("Content-Disposition: form-data; name=\"\(key)\"\r\n".data(using: .utf8)!)
+            body.append("Content-Type: application/json\r\n\r\n".data(using: .utf8)!)
+            
+            let jsonData = try JSONEncoder().encode(AnyEncodable(value))
+            body.append(jsonData)
+            body.append("\r\n".data(using: .utf8)!)
+        }
+        
+        // 파일 필드 추가
+        for (key, file) in multipartData.files {
+            body.append("--\(boundary)\r\n".data(using: .utf8)!)
+            body.append("Content-Disposition: form-data; name=\"\(key)\"; filename=\"\(file.filename)\"\r\n".data(using: .utf8)!)
+            body.append("Content-Type: \(file.mimeType)\r\n\r\n".data(using: .utf8)!)
+            body.append(file.data)
+            body.append("\r\n".data(using: .utf8)!)
+        }
+        
+        body.append("--\(boundary)--\r\n".data(using: .utf8)!)
+        
+        return (body, boundary)
     }
 }

@@ -12,7 +12,7 @@ enum NetworkContainer {
 
     /// 공통 설정 (✅ 실제 서버 주소로 교체)
     static let config = NetworkConfig(
-        baseURL: URL(string: "https://YOUR-BACKEND.EXAMPLE")!
+        baseURL: URL(string: "http://localhost:8080/api")!
     )
 
     /// HTTP 클라이언트: 토큰 자동첨부, 로깅, JSON 디코딩

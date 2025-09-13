@@ -45,10 +45,27 @@ struct LoginView: View {
                     .multilineTextAlignment(.center)
             }
 
-            // 성공 시 메일 표시
-            if let email = vm.loggedInEmail {
-                Text("로그인 성공: \(email)")
-                    .foregroundStyle(.secondary)
+            // 성공 시 사용자 정보 표시
+            if let user = vm.loggedInUser {
+                VStack {
+                    Text("로그인 성공!")
+                        .foregroundStyle(.green)
+                        .fontWeight(.bold)
+                    Text("이메일: \(user.email)")
+                        .foregroundStyle(.secondary)
+                    if !user.nickname.isEmpty {
+                        Text("닉네임: \(user.nickname)")
+                            .foregroundStyle(.secondary)
+                    }
+                }
+            }
+
+            // 회원가입 버튼
+            NavigationLink {
+                SignupView()
+            } label: {
+                Text("회원가입")
+                    .foregroundStyle(.blue)
             }
         }
         .padding(24)

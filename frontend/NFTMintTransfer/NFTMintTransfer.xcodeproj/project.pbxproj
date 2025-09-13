@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE93F9D02E7548C5006E15D5 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93F9CF2E7548C5006E15D5 /* SignupViewModel.swift */; };
+		EE93F9D12E7548C5006E15D5 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93F9CE2E7548C5006E15D5 /* SignupView.swift */; };
 		EEDBA6C92E6F1E09002B2CB1 /* NetworkContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDBA6C82E6F1E09002B2CB1 /* NetworkContainer.swift */; };
 		EEDBA6CE2E6F238F002B2CB1 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDBA6CD2E6F238F002B2CB1 /* AuthViewModel.swift */; };
 		EEDBA6D02E6F23A9002B2CB1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDBA6CF2E6F23A9002B2CB1 /* LoginView.swift */; };
@@ -37,6 +39,8 @@
 		EE58A3382E6C84F300523237 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		EE58A3392E6C84F300523237 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		EE58A33A2E6C84F300523237 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		EE93F9CE2E7548C5006E15D5 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		EE93F9CF2E7548C5006E15D5 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		EEDBA6C82E6F1E09002B2CB1 /* NetworkContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkContainer.swift; sourceTree = "<group>"; };
 		EEDBA6CD2E6F238F002B2CB1 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		EEDBA6CF2E6F23A9002B2CB1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 		EE58A2CB2E6C715100523237 = {
 			isa = PBXGroup;
 			children = (
+				EE93F9CE2E7548C5006E15D5 /* SignupView.swift */,
+				EE93F9CF2E7548C5006E15D5 /* SignupViewModel.swift */,
 				EEDBA6CF2E6F23A9002B2CB1 /* LoginView.swift */,
 				EEDBA6CD2E6F238F002B2CB1 /* AuthViewModel.swift */,
 				EEDBA6C82E6F1E09002B2CB1 /* NetworkContainer.swift */,
@@ -260,6 +266,8 @@
 			files = (
 				EEDBA6CE2E6F238F002B2CB1 /* AuthViewModel.swift in Sources */,
 				EEDBA6C92E6F1E09002B2CB1 /* NetworkContainer.swift in Sources */,
+				EE93F9D02E7548C5006E15D5 /* SignupViewModel.swift in Sources */,
+				EE93F9D12E7548C5006E15D5 /* SignupView.swift in Sources */,
 				EEDBA6D02E6F23A9002B2CB1 /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
