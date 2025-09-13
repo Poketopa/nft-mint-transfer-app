@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EEDBA6C92E6F1E09002B2CB1 /* NetworkContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDBA6C82E6F1E09002B2CB1 /* NetworkContainer.swift */; };
+		EEDBA6CE2E6F238F002B2CB1 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDBA6CD2E6F238F002B2CB1 /* AuthViewModel.swift */; };
+		EEDBA6D02E6F23A9002B2CB1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDBA6CF2E6F23A9002B2CB1 /* LoginView.swift */; };
+		EEDBA6DD2E70092B002B2CB1 /* NetworkingKitJWT in Frameworks */ = {isa = PBXBuildFile; productRef = EEDBA6DC2E70092B002B2CB1 /* NetworkingKitJWT */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		EE58A2EA2E6C715200523237 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -30,22 +37,15 @@
 		EE58A3382E6C84F300523237 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		EE58A3392E6C84F300523237 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		EE58A33A2E6C84F300523237 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		EEDBA6C82E6F1E09002B2CB1 /* NetworkContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkContainer.swift; sourceTree = "<group>"; };
+		EEDBA6CD2E6F238F002B2CB1 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		EEDBA6CF2E6F23A9002B2CB1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EE58A2D62E6C715100523237 /* NFTMintTransfer */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = NFTMintTransfer;
-			sourceTree = "<group>";
-		};
-		EE58A2EC2E6C715200523237 /* NFTMintTransferTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NFTMintTransferTests;
-			sourceTree = "<group>";
-		};
-		EE58A2F62E6C715200523237 /* NFTMintTransferUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NFTMintTransferUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -55,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEDBA6DD2E70092B002B2CB1 /* NetworkingKitJWT in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,10 +79,12 @@
 		EE58A2CB2E6C715100523237 = {
 			isa = PBXGroup;
 			children = (
+				EEDBA6CF2E6F23A9002B2CB1 /* LoginView.swift */,
+				EEDBA6CD2E6F238F002B2CB1 /* AuthViewModel.swift */,
+				EEDBA6C82E6F1E09002B2CB1 /* NetworkContainer.swift */,
 				EE58A33B2E6C84F300523237 /* Configs */,
 				EE58A2D62E6C715100523237 /* NFTMintTransfer */,
-				EE58A2EC2E6C715200523237 /* NFTMintTransferTests */,
-				EE58A2F62E6C715200523237 /* NFTMintTransferUITests */,
+				EEDBA6CA2E6F21E5002B2CB1 /* Frameworks */,
 				EE58A2D52E6C715100523237 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,6 +109,13 @@
 			path = Configs;
 			sourceTree = "<group>";
 		};
+		EEDBA6CA2E6F21E5002B2CB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,6 +136,7 @@
 			);
 			name = NFTMintTransfer;
 			packageProductDependencies = (
+				EEDBA6DC2E70092B002B2CB1 /* NetworkingKitJWT */,
 			);
 			productName = NFTMintTransfer;
 			productReference = EE58A2D42E6C715100523237 /* NFTMintTransfer.app */;
@@ -143,9 +154,6 @@
 			);
 			dependencies = (
 				EE58A2EB2E6C715200523237 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				EE58A2EC2E6C715200523237 /* NFTMintTransferTests */,
 			);
 			name = NFTMintTransferTests;
 			packageProductDependencies = (
@@ -166,9 +174,6 @@
 			);
 			dependencies = (
 				EE58A2F52E6C715200523237 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				EE58A2F62E6C715200523237 /* NFTMintTransferUITests */,
 			);
 			name = NFTMintTransferUITests;
 			packageProductDependencies = (
@@ -209,6 +214,9 @@
 			);
 			mainGroup = EE58A2CB2E6C715100523237;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EEDBA6DB2E700888002B2CB1 /* XCLocalSwiftPackageReference "NetworkingKit-JWT" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EE58A2D52E6C715100523237 /* Products */;
 			projectDirPath = "";
@@ -250,6 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEDBA6CE2E6F238F002B2CB1 /* AuthViewModel.swift in Sources */,
+				EEDBA6C92E6F1E09002B2CB1 /* NetworkContainer.swift in Sources */,
+				EEDBA6D02E6F23A9002B2CB1 /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +583,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		EEDBA6DB2E700888002B2CB1 /* XCLocalSwiftPackageReference "NetworkingKit-JWT" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "NetworkingKit-JWT";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EEDBA6DC2E70092B002B2CB1 /* NetworkingKitJWT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEDBA6DB2E700888002B2CB1 /* XCLocalSwiftPackageReference "NetworkingKit-JWT" */;
+			productName = NetworkingKitJWT;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE58A2CC2E6C715100523237 /* Project object */;
 }

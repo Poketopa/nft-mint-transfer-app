@@ -9,12 +9,11 @@ import SwiftUI
 
 @main
 struct NFTMintTransferApp: App {
-    let persistenceController = PersistenceController.shared
-
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            NavigationStack {
+                LoginView()   // 앱 시작 시 로그인 화면 표시
+            }
         }
     }
 }
